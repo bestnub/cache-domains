@@ -37,7 +37,7 @@
 		},
 		{
 			"name": "gamingformiau",
-			"description": "CDN for frontier games",
+			"description": "GFM cache test",
 			"domain_files": ["gamingformiau.txt"]
 		},
 		{
