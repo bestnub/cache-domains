@@ -46,7 +46,7 @@ while read -r entry; do
                         destfilename=$(echo $filename | sed -e 's/txt/hosts/')
                         lancacheconf=${outputdir}/lancache.conf
                         outputfile=${outputdir}/hosts/${destfilename}
-                        echo "addn-hosts=/etc/dnsmasq/hosts/${destfilename}" >> ${lancacheconf}
+                        echo "addn-hosts=/etc/dnsmasq.d/hosts/${destfilename}" >> ${lancacheconf}
                         touch "$outputfile"
                         # Wildcard entries
                         while read -r fileentry; do
@@ -84,6 +84,6 @@ cat << EOF
 Configuration generation completed.
 
 Please copy the following files:
-- ./${outputdir}/lancache.conf to /etc/dnsmasq/dnsmasq.d/
-- ./${outputdir}/hosts to /etc/dnsmasq/
+- ./${outputdir}/lancache.conf to /etc/dnsmasq.d/
+- ./${outputdir}/hosts to /etc/dnsmasq.d/
 EOF
