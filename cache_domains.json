@@ -36,11 +36,6 @@
 			"domain_files": ["frontier.txt"]
 		},
 		{
-			"name": "gamingformiau",
-			"description": "GFM cache test",
-			"domain_files": ["gamingformiau.txt"]
-		},
-		{
 			"name": "hirez",
 			"description": "CDN for hirez",
 			"domain_files": ["hirez.txt"]
